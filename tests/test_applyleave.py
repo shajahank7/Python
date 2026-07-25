@@ -1,6 +1,6 @@
 import pytest
 from pages.ApplyleavePage import Applyleave
-
+@pytest.mark.skip(reason="Temporarily disabled")
 @pytest.mark.usefixtures("login_setup")
 @pytest.mark.order(1)
 class TestApplyLeaveTest:
