@@ -1,13 +1,11 @@
 import time
 
-import self
 from faker.generator import random
 from selenium.webdriver.common.by import By
 
 from utils.Actions import Actions
 from utils.fakers import Faker, FakerUtils
 
-self.faker = FakerUtils()
 
 
 class Employeepage(Actions):
