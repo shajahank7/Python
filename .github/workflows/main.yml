@@ -39,3 +39,6 @@ jobs:
           DISPLAY: :99
         run: |
           pytest -v
+
+#          schedule:
+#          - cron: '30 3 * * 0'   # Every Sunday 9:00 AM IST
