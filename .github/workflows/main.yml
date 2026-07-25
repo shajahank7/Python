@@ -21,8 +21,13 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install Google Chrome
+      - name: Setup Google Chrome
         uses: browser-actions/setup-chrome@v1
+
+      - name: Verify Chrome Installation
+        run: |
+          google-chrome --version
+          which google-chrome
 
       - name: Install Dependencies
         run: |
@@ -30,5 +35,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Selenium Tests
+        env:
+          DISPLAY: :99
         run: |
-          pytest
+          pytest -v
