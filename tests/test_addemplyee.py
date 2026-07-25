@@ -1,5 +1,4 @@
 import pytest
-from Tools.scripts.mailerdaemon import emparse_list
 
 from conftest import driver
 
