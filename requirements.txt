@@ -1,5 +1,26 @@
+# Core browser automation
+selenium>=4.15.0
+webdriver-manager>=4.0.2
 
-selenium
-pytest
-webdriver-manager
-pytest-html
+# Test framework
+pytest~=8.4.1
+pytest-xdist>=3.3.0
+
+# Config & utilities
+pyyaml~=6.0.2
+python-dotenv~=1.1.1
+python-dateutil~=2.9.0.post0
+filelock~=3.18.0
+Faker~=37.4.0
+
+# Auth / OTP
+IMAPClient~=3.0.1
+
+# AI / ML (self-healing)
+numpy>=1.24.0
+scikit-learn>=1.3.0
+openai~=1.95.0
+
+# Visual regression
+opencv-python-headless>=4.8.0
+pillow>=10.0.0
