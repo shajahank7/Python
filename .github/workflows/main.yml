@@ -37,11 +37,12 @@ jobs:
 
       - name: Install Allure CLI
         run: |
-          wget https://github.com/allure-framework/allure2/releases/latest/download/allure-2.34.1.tgz
-          tar -zxvf allure-2.34.1.tgz
-          sudo mv allure-2.34.1 /opt/allure
-          sudo ln -sf /opt/allure/bin/allure /usr/bin/allure
-          allure --version
+              ALLURE_VERSION=2.44.0
+              wget https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}.tgz
+              tar -xzf allure-${ALLURE_VERSION}.tgz
+              sudo mv allure-${ALLURE_VERSION} /opt/allure
+              sudo ln -sf /opt/allure/bin/allure /usr/local/bin/allure
+              allure --versionn
 
       - name: Install Dependencies
         run: |
