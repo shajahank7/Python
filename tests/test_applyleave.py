@@ -1,7 +1,7 @@
 import pytest
 from pages.ApplyleavePage import Applyleave
 
-@pytest.mark.usefixtures("login_setup")
+# @pytest.mark.usefixtures("login_setup")
 @pytest.mark.order(1)
 class TestApplyLeaveTest:
     def test_applyleave(self, driver):
