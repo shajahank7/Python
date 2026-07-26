@@ -42,7 +42,7 @@ jobs:
               tar -xzf allure-${ALLURE_VERSION}.tgz
               sudo mv allure-${ALLURE_VERSION} /opt/allure
               sudo ln -sf /opt/allure/bin/allure /usr/local/bin/allure
-              allure --versionn
+              allure --version
 
       - name: Install Dependencies
         run: |
